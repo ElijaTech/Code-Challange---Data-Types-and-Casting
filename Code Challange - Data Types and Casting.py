@@ -30,16 +30,23 @@ def main():
         else:
             print("The first number divided by the second number is: ", numberint / numberfloat)
 
+
+
         squareroot = input("Do you want to find the square root of the decimal number or the integer number? (decimal/integer): ")
         if squareroot == 'decimal':
             if numberfloat > 0:
                 print("The square root of the decimal number is: ", math.sqrt(numberfloat))
+
             else:
                 print("Sorry the square root of a negative number is not allowed.")
 
-        else:
+        elif squareroot == 'integer':
             if numberint > 0:
                 print("The square root of the integer number is: ", math.sqrt(numberint))
+
+            else:
+                print("Sorry the square root of a negative number is not allowed.")
+
 
 
 
